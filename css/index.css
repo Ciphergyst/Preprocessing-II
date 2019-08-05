@@ -10,7 +10,7 @@
   font-size: 16px;
   margin: 4px 2px;
 }
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -157,6 +157,7 @@ h5 {
 }
 h1 {
   font-size: 4rem;
+  margin-left: 1em;
 }
 h2 {
   font-size: 3.2rem;
@@ -180,27 +181,29 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #FFFFFF;
-  border-bottom: 2px dashed #C0C0C0;
+.header-container {
+  width: 100%;
+  height: 10em;
 }
-ul li {
-  float: right;
+.header-container .header {
+  width: 100%;
+  height: 7em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row;
+  border-bottom: 2px dashed gray;
 }
-ul li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 30px 16px;
+.header-container .header nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-right: 3em;
+}
+.header-container .header nav a {
   text-decoration: none;
-}
-ul li a a.logo {
-  font-size: 18px;
-  font-family: 'Indie Flower', cursive;
+  color: black;
+  padding: 1.5em;
 }
 .footer {
   width: 100%;
@@ -214,9 +217,9 @@ ul li a a.logo {
   padding: 20px;
 }
 .img-content-main {
-  width: 100%;
-  padding-left: 9.5em;
-  padding-right: 9.5em;
+  margin-left: auto;
+  margin-left: 4em;
+  margin-right: 4em;
 }
 .home .content-section {
   margin: 30px 0;

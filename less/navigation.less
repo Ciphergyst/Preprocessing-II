@@ -5,35 +5,44 @@
 @border-bottom: 2px dashed #C0C0C0;
 
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #FFFFFF;
-  border-bottom: @border-bottom;
+.header-container {
+  width:100%;
+  height: 10em;
+
+  .header {
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row;
 
 
-  li {
-    float: right;
-    margin-right: 2em;
-    font-size: 16px;
+    // h1 {
+    //   @media @mobile {
+    //
+    //   }
+    // }
 
+    nav {
+      display:flex;
+      justify-content: space-between;
+      font-size: 14px;
 
-   li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 30px 16px 15px;
-    text-decoration: none;
-    font-size: 16px;
-    margin-right: 10px;
+      a {
+        text-decoration: none;
+        color: dark gray;
+      }
 
-
+      @media @mobile {
+        .mobile();
+        justify-content: space-around;
+      }
     }
 
   }
-}
+ @media @mobile {
+   flex-direction:column;
+ }
 
 }
 

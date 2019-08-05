@@ -4,15 +4,19 @@
 @padding: 8px 30px 8px 30px;
 
 
-.btn {
-  border: none;
+.btn (@text, @width, @color, @height){
   color: white;
-  background-color: @button-bg;
-  padding: @padding;
+  background-color: @color;
+  padding: @height;
   border-radius: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: @text;
   margin: 4px 2px;
+
+
+  @media @mobile {
+    .mobile();
+  }
 }
