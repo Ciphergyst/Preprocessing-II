@@ -3,6 +3,7 @@
 // @font-family: 'Roboto', sans-serif;
 @line-height: 1em + 1em;
 @border-bottom: 2px dashed #C0C0C0;
+@mobile: @media (max-width: 500px);
 
 
 .header-container {
@@ -17,11 +18,16 @@
     flex-flow: row;
 
 
-    // h1 {
-    //   @media @mobile {
-    //
-    //   }
-    // }
+
+     @media only screen and (max-width: 600px) {
+      h1 {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-flow: nowrap;
+     }
+      }
+
 
     nav {
       display:flex;
@@ -31,6 +37,7 @@
       a {
         text-decoration: none;
         color: dark gray;
+        flex-wrap: nowrap;
       }
 
       @media @mobile {
